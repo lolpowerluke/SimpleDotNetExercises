@@ -12,4 +12,11 @@ for (int i = 0; i < createdArray.Length; i++)
 }
 */
 
+/*
 Gebruik_nullables.calculateBonus();
+*/
+
+
+Console.WriteLine("Write a sentence.");
+string input = Console.ReadLine();
+Console.WriteLine(Oefening_op_Eigenschappen.getNumber(input));
