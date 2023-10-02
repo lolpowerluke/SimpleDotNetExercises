@@ -12,3 +12,4 @@ for (int i = 0; i < createdArray.Length; i++)
 }
 */
 
+Gebruik_nullables.calculateBonus();
