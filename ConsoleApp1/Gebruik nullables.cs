@@ -17,24 +17,48 @@ namespace ConsoleApp1
             do
             {
                 Console.WriteLine("Hoe lang heeft hij bij Verkoop gewerkt?");
-                string input = Console.ReadLine();
-                isValid = float.TryParse(input, out verkoopJaren);
+                string? input = Console.ReadLine();
+                if (input == "")
+                {
+                    isValid = true;
+                    verkoopJaren = 0;
+                } 
+                else
+                {
+                    isValid = float.TryParse(input, out verkoopJaren);
+                }
             } while (isValid == false);
             float ondersteuningJaren;
             isValid = false;
             do
             {
                 Console.WriteLine("Hoe lang heeft hij bij Ondersteuning gewerkt?");
-                string input = Console.ReadLine();
-                isValid = float.TryParse(input, out ondersteuningJaren);
+                string? input = Console.ReadLine();
+                if (input == "")
+                {
+                    isValid = true;
+                    ondersteuningJaren = 0;
+                }
+                else
+                {
+                    isValid = float.TryParse(input, out ondersteuningJaren);
+                }
             } while (isValid == false);
             float administratieJaren;
             isValid = false;
             do
             {
                 Console.WriteLine("Hoe lang heeft hij bij Administratie gewerkt?");
-                string input = Console.ReadLine();
-                isValid = float.TryParse(input, out administratieJaren);
+                string? input = Console.ReadLine();
+                if (input == "")
+                {
+                    isValid = true;
+                    administratieJaren = 0;
+                }
+                else
+                {
+                    isValid = float.TryParse(input, out administratieJaren);
+                }
             } while (isValid == false);
             int bonus;
             if ((verkoopJaren < 1 && ondersteuningJaren < 1) || (verkoopJaren < 1 && administratieJaren < 1) || (ondersteuningJaren < 1 && administratieJaren < 1))
@@ -44,6 +68,7 @@ namespace ConsoleApp1
             else
             {
                 double bonusFloat = Math.Floor(verkoopJaren) + Math.Floor(ondersteuningJaren) + Math.Floor(administratieJaren);
+                bonusFloat = bonusFloat * 2;
                 bonus = Convert.ToInt32(bonusFloat);
             }
 
