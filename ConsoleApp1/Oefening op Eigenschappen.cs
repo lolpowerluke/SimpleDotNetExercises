@@ -11,7 +11,6 @@ namespace ConsoleApp1
         public static string getNumber(string input)
         {
             string a = string.Empty;
-            int val;
 
             for (int i = 0; i < input.Length; i++)
             {
