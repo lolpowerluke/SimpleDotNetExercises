@@ -3,6 +3,8 @@ using ConsoleApp1;
 
 //Condities_en_iteraties.main();
 
+
+/* ------------------- Werken_met_arrays ------------------- */
 /* 
 string[] createdArray = Werken_met_arrays.createArray();
 Console.WriteLine("Array: ");
@@ -12,16 +14,22 @@ for (int i = 0; i < createdArray.Length; i++)
 }
 */
 
+
+/* ------------------- Gebruik_nullables ------------------- */
 /*
 Gebruik_nullables.calculateBonus();
 */
 
+
+/* --------------- Oefening_op_Eigenschappen --------------- */
 /*
 Console.WriteLine("Write a sentence.");
 string input = Console.ReadLine();
 Console.WriteLine(Oefening_op_Eigenschappen.getNumber(input));
 */
 
+
+/* ----------- Oefening_op_Generieke_Collecties ------------ */
 /*
 Oefening_op_Generieke_Collecties<int> rij = new Oefening_op_Generieke_Collecties<int>();
 char keuze = '0';
